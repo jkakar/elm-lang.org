@@ -49,7 +49,7 @@ isLong book =
 
 In the `averageNameLength` example, we are requiring that our input is a list of strings. If someone tries to pass in a list of integers or books, the `String.length` function would break, so this contract rules that out. We also say the `averageNameLength` function is definitely going to return a `Float` so if we use its result somewhere else, we have a 100% guarantee that its a floating point number.
 
-The `isLong` example is doing exactly the same thing. It requires a record with a field name `pages` that holds integers. Any record will do, with however many other fields you want, but we definitely need the `pages` field!
+The `isLong` example is doing exactly the same thing. It requires a record with a field named `pages` that holds integers. Any record will do, with however many other fields you want, but we definitely need the `pages` field!
 
 So in both cases we are writing contracts that say &ldquo;I require input with this shape, and I will give you output with that shape.&rdquo; This is the essence of ruling out runtime errors in Elm. We always know what kind of values a function needs and what kind it produces, so we can just check that we always follow these rules.
 
